@@ -1,0 +1,106 @@
+/* Universal Styles */
+
+html {
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+}
+
+p {
+	font-weight: 300;
+}
+
+main article:nth-child(2n) {
+	background-color: #eee;
+}
+
+/* Header */
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 4rem;
+	padding-right: 1.5rem;
+	padding-left: 1.5rem;
+	position: fixed;
+	background-color: #eee;
+	z-index: 20;
+	left: 0;
+	right: 0;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	font-size: 1.2rem;
+	height: 2rem;
+}
+
+.logo h3 span {
+	font-weight: 300;
+}
+
+nav {
+	font-family: 'Raleway', sans-serif;
+}
+
+nav a {
+	text-decoration: none;
+	color: inherit;
+}
+
+nav li {
+	display: inline;
+	padding-right: 1rem;
+}
+
+nav li:last-child {
+	padding-right: 0;
+}
+
+.shortmenu {
+	display: none;
+}
+
+@media only screen and (max-width: 690px) {
+	.longmenu {
+		display: none;
+	}
+
+	.shortmenu {
+		display: block;
+		width: 50%;
+	}
+
+	.shortmenu ul {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.shortmenu li:first-child {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 540px) {
+	.shortmenu li:first-child {
+		display: inherit;
+	}
+
+	.shortmenu {
+		width: 100%;
+	}
+
+	.logo {
+		display: none;
+	}
+}
