@@ -17,8 +17,29 @@ p {
 	font-weight: 300;
 }
 
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
 main .block:nth-child(2n + 1) {
 	background-color: #eee;
+}
+
+main,
+footer {
+	position: relative;
+	top: 4rem;
+}
+
+.leftbox {
+	margin: 2rem 1.5rem;
+	width: 60%;
+}
+
+.leftbox img,
+.leftbox video {
+	width: 100%;
 }
 
 /* Header */
@@ -33,8 +54,8 @@ header {
 	position: fixed;
 	background-color: #fff;
 	z-index: 20;
-	left: 0;
-	right: 0;
+	width: 100%;
+	box-sizing: border-box;
 }
 
 .logo {
@@ -48,13 +69,38 @@ header {
 	font-weight: 300;
 }
 
-nav {
-	font-family: 'Raleway', sans-serif;
+.logo:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.6);
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+    
 }
 
-nav a {
-	text-decoration: none;
-	color: inherit;
+.logo:hover:after {
+    width: 120%;
+    background-color: rgba(255,255,255,0);
+    -webkit-transition: all .8s ease-in;
+    -moz-transition: all .8s ease-in;
+    -ms-transition: all .8s ease-in;
+    -o-transition: all .8s ease-in;
+    transition: all .8s ease-in;
+}
+
+.logo:hover:active {
+	color: darkgrey;
+}
+
+nav {
+	font-family: 'Raleway', sans-serif;
 }
 
 nav li {
@@ -64,6 +110,11 @@ nav li {
 
 nav li:last-child {
 	padding-right: 0;
+}
+
+nav li:hover {
+	color: darkgrey;
+	transition: color .2s ease-out;
 }
 
 .shortmenu {
@@ -104,3 +155,61 @@ nav li:last-child {
 		display: none;
 	}
 }
+
+/* Splash Section */
+
+.splash {
+	display: flex;
+}
+
+.splash h1,
+.splash p {
+	width: 75%;
+}
+
+.splash h1 {
+	font-weight: 600;
+	font-size: 2.5rem;
+	line-height: 1.1;
+}
+
+.splash p {
+	font-weight: 300;
+	font-size: 1.5rem;
+	line-height: 1.3;
+}
+
+.infobox {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 12% 0;
+}
+
+button {
+	padding: .5rem;
+	font-size: 1rem;
+	font-family: 'Raleway', sans-serif;
+	background-color: gray;
+	color: #fff;
+	width: 60%;
+}
+
+button:hover:active {
+	background-color: #fff;
+}
+
+button:hover {
+	background-color: darkgrey;
+	cursor: pointer;
+	transition: background-color .4s ease-out;
+}
+
+
+/* About Section */
+/* Courses Section */
+/* What's On Section */
+
+/* Footer */
+
+
