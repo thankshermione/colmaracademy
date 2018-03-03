@@ -17,7 +17,7 @@ p {
 	font-weight: 300;
 }
 
-main article:nth-child(2n) {
+main .block:nth-child(2n + 1) {
 	background-color: #eee;
 }
 
@@ -31,7 +31,7 @@ header {
 	padding-right: 1.5rem;
 	padding-left: 1.5rem;
 	position: fixed;
-	background-color: #eee;
+	background-color: #fff;
 	z-index: 20;
 	left: 0;
 	right: 0;
