@@ -15,11 +15,57 @@ h4 {
 
 p {
 	font-weight: 300;
+	line-height: 1.3;
 }
 
 a {
 	text-decoration: none;
 	color: inherit;
+	font-weight: 500;
+}
+
+cite {
+	font-size: .8rem;
+	font-weight: 600;
+	font-family: 'Raleway', sans-serif;
+	text-align: right;
+}
+
+cite:before {
+	content: "- ";
+}
+
+.sidemenu {
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	padding-left: 1.5rem;
+}
+
+.sidemenu article {
+	display: flex;
+	padding: 1rem;
+	border: 1px #eee solid;
+}
+
+.sidemenu article:first-child {
+	border-bottom: none;
+}
+
+.sidemenu article:hover {
+	background-color: #eee;
+}
+
+.sidemenu section:first-child {
+	width: 35%;
+}
+
+.sidemenu .infobox {
+	width: 65%;
+	padding-left: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 main .block:nth-child(2n + 1) {
@@ -33,13 +79,17 @@ footer {
 }
 
 .leftbox {
-	margin: 2rem 1.5rem;
 	width: 60%;
+	display: flex;
+	flex-direction: column;
 }
 
 .leftbox img,
-.leftbox video {
+.leftbox video,
+.splash img,
+.sidemenu img {
 	width: 100%;
+	height: auto;
 }
 
 /* Header */
@@ -160,6 +210,8 @@ nav li:hover {
 
 .splash {
 	display: flex;
+	align-items: center;
+	padding: 2rem 0 2rem 1.5rem;
 }
 
 .splash h1,
@@ -176,14 +228,19 @@ nav li:hover {
 .splash p {
 	font-weight: 300;
 	font-size: 1.5rem;
-	line-height: 1.3;
+	padding-top: 1.5rem;
+	padding-bottom: 2rem;
 }
 
-.infobox {
+.splash section:first-child {
+	width: 60%;
+}
+
+.splash .infobox {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
-	padding: 12% 0;
+	padding-left: 2.5rem;
+	width: 40%;
 }
 
 button {
@@ -192,11 +249,7 @@ button {
 	font-family: 'Raleway', sans-serif;
 	background-color: gray;
 	color: #fff;
-	width: 60%;
-}
-
-button:hover:active {
-	background-color: #fff;
+	width: 58%;
 }
 
 button:hover {
@@ -207,6 +260,44 @@ button:hover {
 
 
 /* About Section */
+
+	/* Left Box */
+
+	.about {
+		display: inline-flex;
+		padding: 2rem 0 2rem 1.5rem;
+	}
+
+	.about .leftbox h2 {
+		margin: 2rem 0 1.5rem 0;
+		font-size: 2.3rem;
+		font-weight: 600;
+	}
+
+	.about .leftbox p {
+		margin-bottom: 1rem;
+	}
+
+	/* Side Menu */
+
+	.about .sidemenu article:last-child {
+		border-top: none;
+	}
+
+	.about .sidemenu h3 {
+		font-size: 1.3rem;
+		font-weight: 600;
+	}
+
+	.about .sidemenu p {
+		padding: .5rem 0;
+	}
+
+	.about .sidemenu a:hover {
+		color: darkgrey;
+		transition: .2s ease-out;
+	}
+
 /* Courses Section */
 /* What's On Section */
 
