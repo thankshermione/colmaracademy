@@ -28,7 +28,6 @@ cite {
 	font-size: .8rem;
 	font-weight: 600;
 	font-family: 'Raleway', sans-serif;
-	text-align: right;
 }
 
 cite:before {
@@ -61,6 +60,7 @@ cite:before {
 
 .sidemenu article:hover {
 	background-color: #eee;
+	transition: .2s ease;
 }
 
 .sidemenu section:first-child {
@@ -75,7 +75,8 @@ cite:before {
 	justify-content: center;
 }
 
-.sidemenu h3 {
+.sidemenu h3,
+.courses h3 {
 		font-size: 1.3rem;
 		font-weight: 600;
 	}
@@ -96,12 +97,19 @@ cite:before {
 	padding: 2rem 1.5rem 2rem 1.5rem;
 }
 
-.leftbox img,
-.leftbox video,
-.splash img,
-.sidemenu img {
+img,
+video {
 	width: 100%;
 	height: auto;
+}
+
+.whats-on h2,
+.courses h2 {
+	width: 100%;
+	text-align: center;
+	padding-top: 2rem;
+	font-weight: 600;
+	font-size: 2rem;
 }
 
 /* Header */
@@ -289,7 +297,7 @@ button:hover {
 
 	.about .leftbox h2 {
 		margin: 2rem 0 1.5rem 0;
-		font-size: 2.3rem;
+		font-size: 2.1rem;
 		font-weight: 600;
 	}
 
@@ -305,16 +313,74 @@ button:hover {
 
 /* Courses Section */
 
+.courses {
+	display: flex;
+	flex-direction: column;
+}
+
+.courses .wrapper {
+	flex-wrap: wrap;
+	padding: 2rem 4.5rem;
+	justify-content: space-between;
+	align-items: space-between;
+	height: 750px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.courses section {
+	display: flex;
+	flex-direction: column;
+	width: 32%;
+	height: 47%;
+	background-color: #fff;
+}
+
+.courses a:hover {
+	opacity: .5;
+	background-color: lightblue;
+	transition: .3s ease-out;
+	width: 100%;
+	height: 100%;
+}
+
+.calltoaction {
+	color: #fff;
+	position: absolute;
+	visibility: hidden;
+	font-weight: 600;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.5rem;
+	z-index: 10;
+	opacity: 1;
+}
+
+.courses a:hover > .calltoaction {
+	visibility: visible;
+}
+
+.courses h3,
+.courses h4,
+.courses p {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.courses h3 {
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+}
+
+.courses h4 {
+	font-weight: 300;
+	padding-bottom: .8rem;
+}
+
+.courses p {
+	padding-bottom: 1.5rem;
+}
 
 /* What's On Section */
-
-.whats-on h2 {
-	width: 100%;
-	text-align: center;
-	padding-top: 2rem;
-	font-weight: 600;
-	font-size: 2rem;
-}
 
 .whats-on {
 	display: flex;
@@ -344,7 +410,7 @@ footer {
 	padding: 1rem 1.5rem 2rem 1.5rem;
 	border-top: 1px solid #eee;
 	font-size: .8rem;
-	font-family: 'Roboto';
+	font-family: 'Roboto', sans-serif;
 }
 
 footer span:first-child {
