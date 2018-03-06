@@ -35,17 +35,24 @@ cite:before {
 	content: "- ";
 }
 
+.about,
+.wrapper {
+		display: inline-flex;
+	}
+
 .sidemenu {
 	width: 40%;
 	display: flex;
 	flex-direction: column;
-	padding-left: 1.5rem;
+	padding: 2rem 0;
+	border-left: 1px #eee solid;
 }
 
 .sidemenu article {
 	display: flex;
 	padding: 1rem;
-	border: 1px #eee solid;
+	border-top: 1px #eee solid;
+	border-bottom: 1px #eee solid;
 }
 
 .sidemenu article:first-child {
@@ -68,20 +75,25 @@ cite:before {
 	justify-content: center;
 }
 
-main .block:nth-child(2n + 1) {
-	background-color: #eee;
-}
+.sidemenu h3 {
+		font-size: 1.3rem;
+		font-weight: 600;
+	}
 
-main,
-footer {
-	position: relative;
-	top: 4rem;
-}
+.sidemenu p {
+		padding: .5rem 0;
+	}
+
+.sidemenu a:hover {
+		color: darkgrey;
+		transition: .2s ease-out;
+	}
 
 .leftbox {
 	width: 60%;
 	display: flex;
 	flex-direction: column;
+	padding: 2rem 1.5rem 2rem 1.5rem;
 }
 
 .leftbox img,
@@ -206,6 +218,18 @@ nav li:hover {
 	}
 }
 
+/* Main Content */
+
+main .block:nth-child(2n + 1) {
+	background-color: #eee;
+}
+
+main,
+footer {
+	position: relative;
+	top: 4rem;
+}
+
 /* Splash Section */
 
 .splash {
@@ -263,11 +287,6 @@ button:hover {
 
 	/* Left Box */
 
-	.about {
-		display: inline-flex;
-		padding: 2rem 0 2rem 1.5rem;
-	}
-
 	.about .leftbox h2 {
 		margin: 2rem 0 1.5rem 0;
 		font-size: 2.3rem;
@@ -284,22 +303,38 @@ button:hover {
 		border-top: none;
 	}
 
-	.about .sidemenu h3 {
-		font-size: 1.3rem;
-		font-weight: 600;
-	}
-
-	.about .sidemenu p {
-		padding: .5rem 0;
-	}
-
-	.about .sidemenu a:hover {
-		color: darkgrey;
-		transition: .2s ease-out;
-	}
-
 /* Courses Section */
+
+
 /* What's On Section */
+
+.whats-on h2 {
+	width: 100%;
+	text-align: center;
+	padding-top: 2rem;
+	font-weight: 600;
+	font-size: 2rem;
+}
+
+.whats-on {
+	display: flex;
+	flex-direction: column;
+}
+
+.whats-on .sidemenu {
+	margin-top: 2rem;
+	padding-top: 0;
+}
+
+.whats-on .leftbox {
+	padding-top: 1.18rem;
+}
+
+.whats-on h3 {
+	font-weight: 500;
+	font-size: 1.5rem;
+	margin: 1.5rem 0 .5rem 0;
+}
 
 /* Footer */
 
