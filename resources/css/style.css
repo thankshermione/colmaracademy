@@ -10,7 +10,7 @@ h2,
 h3,
 h4 {
 	font-family: 'Raleway', sans-serif;
-	font-weight: 600;
+	font-weight: 500;
 }
 
 p {
@@ -95,7 +95,7 @@ cite:before {
 }
 
 .sidemenu a:hover {
-		color: #2E5344;
+		color: #205E46;
 	}
 
 .leftbox {
@@ -123,8 +123,7 @@ video {
 .heading,
 .splash h1,
 .about h2,
-.about h3,
-.whats-on h3 {
+.whats-on.leftbox h3 {
 	color: #183C2E;
 }
 
@@ -155,7 +154,7 @@ header {
 
 .logo h3 span {
 	font-weight: 300;
-	color: #FFD968;
+	color: #fed173;
 }
 
 .logo:after {
@@ -165,7 +164,7 @@ header {
     left: 0px;
     width: 0%;
     height: 100%;
-    background-color: rgba(198,85,85,0.6);
+    background-color: rgba(65,100,86,0.6);
     -webkit-transition: none;
     -moz-transition: none;
     -ms-transition: none;
@@ -176,7 +175,7 @@ header {
 
 .logo:hover:after {
     width: 50%;
-    background-color: rgba(198,85,85,0);
+    background-color: rgba(65,100,86,0);
     -webkit-transition: all .3s ease-in;
     -moz-transition: all .4s ease-in;
     -ms-transition: all .4s ease-in;
@@ -203,7 +202,7 @@ nav li:last-child {
 }
 
 nav li:hover {
-	color: #FFD968;
+	color: #fed173;
 }
 
 .shortmenu {
