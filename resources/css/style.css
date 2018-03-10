@@ -527,6 +527,22 @@ button:hover {
 	flex-direction: column;
 }
 
+.courselist {
+	display: none;
+	margin: 0 1rem 2rem 1rem;
+}
+
+.courselist li {
+	padding: 1.2rem 1rem;
+	margin-bottom: .5rem;
+	background-color: #FFFFF7;
+	font-size: 1.2rem;
+}
+
+.courselist li:hover {
+	background-color: #fed173;
+}
+
 .courses .wrapper {
 	flex-wrap: wrap;
 	padding: 2rem 4.5rem;
@@ -616,6 +632,67 @@ button:hover {
 	padding-bottom: 1.5rem;
 }
 
+@media only screen and (max-width: 980px) {
+	.courses .wrapper {
+		padding: 2rem 0;
+		margin: 0;
+		width: 100%;
+		justify-content: space-around;
+		align-content: space-between;
+		height: 110%;
+		box-sizing: border-box;
+	}
+
+	.courses section {
+		width: 30%;
+		height: 40%;
+		margin-bottom: 1.5rem;
+	}
+
+	.longbox p {
+		padding-bottom: .25rem;
+	}
+}
+
+@media only screen and (max-width: 830px) {
+	.courses p {
+		font-size: .9rem;
+	}
+
+	.courses h3 {
+		font-size: 1.2rem;
+		padding: 1rem;
+	}
+
+	.courses h4 {
+		font-size: .9rem;
+	}
+}
+
+@media only screen and (max-width: 760px) {
+	.courses .heading {
+		padding-bottom: 1.5rem;
+	}
+
+	.courses .wrapper {
+		display: none;
+	}
+
+	.courselist {
+		display: block;
+	}
+
+	.courselist li {
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 540px) {
+	.courselist li {
+		text-align: left;
+	}
+}
+
 /* What's On Section */
 
 .whats-on {
@@ -645,6 +722,7 @@ button:hover {
 
 	.whats-on .leftbox {
 		width: 100%;
+		padding-top: .5rem;
 	}
 
 	.whats-on h3,
