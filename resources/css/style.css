@@ -25,7 +25,6 @@ a {
 }
 
 cite {
-	font-size: 12.8px;
 	font-size: .8rem;
 	font-weight: 600;
 	font-family: 'Raleway', sans-serif;
@@ -51,7 +50,6 @@ cite:before {
 	-webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-	padding: 32px 0;
 	padding: 2rem 0;
 	border-left: 2px #748E84 dashed;
 }
@@ -64,7 +62,6 @@ cite:before {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	padding: 16px;
 	padding: 1rem;
 	border-top: 2px #748E84 dashed;
 	border-bottom: 2px #748E84 dashed;
@@ -87,7 +84,6 @@ cite:before {
 
 .sidemenu .infobox {
 	width: 65%;
-	padding-left: 16px;
 	padding-left: 1rem;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -103,13 +99,11 @@ cite:before {
 
 .sidemenu h3,
 .courses h3 {
-	font-size: 20.8px;
 	font-size: 1.3rem;
 	font-weight: 600;
 }
 
 .sidemenu p {
-	padding: 8px 0;
 	padding: .5rem 0;
 }
 
@@ -131,7 +125,6 @@ cite:before {
 	-webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-	padding: 32px 24px 32px 24px;
 	padding: 2rem 1.5rem 2rem 1.5rem;
 }
 
@@ -145,10 +138,8 @@ video {
 .heading {
 	width: 100%;
 	text-align: center;
-	padding-top: 32px;
 	padding-top: 2rem;
 	font-weight: 700;
-	font-size: 32px;
 	font-size: 2rem;
 }
 
@@ -192,11 +183,8 @@ header {
 	-webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-	height: 64px;
 	height: 4rem;
-	padding-right: 24px;
 	padding-right: 1.5rem;
-	padding-left: 24px;
 	padding-left: 1.5rem;
 	position: fixed;
 	background-color: #416456;
@@ -213,9 +201,7 @@ header {
 	-webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-	font-size: 19.2px;
 	font-size: 1.2rem;
-	height: 32px;
 	height: 2rem;
 }
 
@@ -254,7 +240,6 @@ nav a {
 
 nav li {
 	display: inline;
-	padding-right: 16px;
 	padding-right: 1rem;
 	-webkit-transition: color .2s ease-out;
 	transition: color .2s ease-out;
@@ -325,7 +310,6 @@ main .block:nth-child(2n) {
 main,
 footer {
 	position: relative;
-	top: 64px;
 	top: 4rem;
 }
 
@@ -338,7 +322,6 @@ footer {
 	-webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-	padding: 32px 0 32px 24px;
 	padding: 2rem 0 2rem 1.5rem;
 }
 
@@ -349,18 +332,14 @@ footer {
 
 .splash h1 {
 	font-weight: 600;
-	font-size: 40px;
 	font-size: 2.5rem;
 	line-height: 1.1;
 }
 
 .splash p {
 	font-weight: 300;
-	font-size: 24px;
 	font-size: 1.5rem;
-	padding-top: 24px;
 	padding-top: 1.5rem;
-	padding-bottom: 32px;
 	padding-bottom: 2rem;
 }
 
@@ -376,15 +355,12 @@ footer {
 	-webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-	padding-left: 40px;
 	padding-left: 2.5rem;
 	width: 40%;
 }
 
 button {
-	padding: 8px;
 	padding: .5rem;
-	font-size: 14.4px;
 	font-size: .9rem;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
@@ -476,15 +452,12 @@ button:hover {
 /* About Section */
 
 .about .leftbox h2 {
-	margin: 32px 0 24px 0;
 	margin: 2rem 0 1.5rem 0;
-	font-size: 33.6px;
 	font-size: 2.1rem;
 	font-weight: 600;
 }
 
 .about .leftbox p {
-	margin-bottom: 16px;
 	margin-bottom: 1rem;
 }
 
@@ -614,17 +587,13 @@ button:hover {
 
 .courselist {
 	display: none;
-	margin: 0 16px 32px 16px;
 	margin: 0 1rem 2rem 1rem;
 }
 
 .courselist li {
-	padding: 19.2px 16px;
 	padding: 1.2rem 1rem;
-	margin-bottom: 8px;
 	margin-bottom: .5rem;
 	background-color: #FFFFF7;
-	font-size: 19.2px;
 	font-size: 1.2rem;
 }
 
@@ -635,7 +604,6 @@ button:hover {
 .courses .wrapper {
 	-ms-flex-wrap: wrap;
   flex-wrap: wrap;
-	padding: 32px 72px;
 	padding: 2rem 4.5rem;
 	-webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -703,7 +671,6 @@ button:hover {
 .calltoaction h2 {
 	font-weight: 600;
 	font-family: 'Raleway', sans-serif;
-	font-size: 19.2px;
 	font-size: 1.2rem;
 	text-align: center;
 	padding-top: 20%;
@@ -720,27 +687,21 @@ button:hover {
 .courses h3,
 .courses h4,
 .courses p {
-	padding-left: 16px;
 	padding-left: 1rem;
-	padding-right: 16px;
 	padding-right: 1rem;
 }
 
 .courses h3 {
-	padding-top: 24px;
 	padding-top: 1.5rem;
-	padding-bottom: 24px;
 	padding-bottom: 1.5rem;
 }
 
 .courses h4 {
 	font-weight: 300;
-	padding-bottom: 12.8px;
 	padding-bottom: .8rem;
 }
 
 .courses p {
-	padding-bottom: 24px;
 	padding-bottom: 1.5rem;
 }
 
@@ -820,21 +781,17 @@ button:hover {
 }
 
 .whats-on .sidemenu {
-	margin-top: 32px;
 	margin-top: 2rem;
 	padding-top: 0;
 }
 
 .whats-on .leftbox {
-	padding-top: 18.88px;
 	padding-top: 1.18rem;
 }
 
 .whats-on .leftbox h3 {
 	font-weight: 500;
-	font-size: 24px;
 	font-size: 1.5rem;
-	margin: 24px 0 8px 0;
 	margin: 1.5rem 0 .5rem 0;
 }
 
@@ -869,9 +826,7 @@ footer {
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	padding: 16px 24px;
 	padding: 1rem 1.5rem;
-	font-size: 12.8px;
 	font-size: .8rem;
 	font-family: 'Roboto', sans-serif;
 	background-color: #416456;
@@ -879,7 +834,6 @@ footer {
 }
 
 footer span:first-child {
-	padding-right: 16px;
 	padding-right: 1rem;
 }
 
