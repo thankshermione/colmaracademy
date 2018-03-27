@@ -56,7 +56,7 @@
 				<section class="infobox">
 					<h1>Learn something new every day.</h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					<button onclick="document.getElementById('sign-in').style.display='block'" class="chunky-button modal-open" type="button">START HERE</button>
+					<button onclick="window.location.href='#start-here'" class="chunky-button" type="button">START HERE</button>
 				</section>
 			</article>
 
@@ -119,7 +119,7 @@
 
 			<!-- Courses Section -->
 
-			<article class="block courses">
+			<article id="start-here" class="block courses">
 				<h2 class="heading">Start Learning</h2>
 				<div class="courselist">
 					<ul role="presentation">
@@ -263,10 +263,10 @@
 				</div>
 				<div class="modal-body">
 					<label for="username">Email</label>
-					<input id="username" type="email" placeholder="username@email.com" required="Please enter your username">
+					<input id="username" type="email" placeholder="username@email.com" required>
 					<label for="password">Password</label>
-					<input id="password" type="password" placeholder="e.g. 'wattlebird'" required="Please enter your password">
-					<button type="button" class="modal-button">LOG IN</button>
+					<input id="password" type="password" placeholder="e.g. 'wattlebird'" required>
+					<button type="submit" class="modal-button">LOG IN</button>
 					<span class="password-reset"><a href="">Forgot password?</a></span>
 				</div>
 			</form>
