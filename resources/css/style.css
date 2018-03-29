@@ -869,6 +869,8 @@ footer a:hover {
 	z-index: 30;
 	background-color: rgba(65, 100, 86, .85);
 	overflow: auto;
+	-webkit-animation: fadeIn .5s;
+  animation: fadeIn .5s;
 }
 
 .modal-content {
@@ -876,12 +878,22 @@ footer a:hover {
 	border-radius: 10px;
 	width: 35%;
 	margin: 10% auto;
+	-webkit-animation: bounceInUp .8s cubic-bezier(0.215, 0.61, 0.355, 1);
+  animation: bounceInUp .8s cubic-bezier(0.215, 0.61, 0.355, 1);
+	box-shadow: 2px 2px 8px #183C2E;
 }
 
 .modal-body {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+	-webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -899,7 +911,7 @@ footer a:hover {
 
 .modal-button {
 	width: 30%;
-	margin: 2rem auto .8rem auto;
+	margin: 1rem auto .8rem auto;
 	padding: .8rem;
 	background-color: #fed173;
 	border-radius: 4px;
@@ -918,21 +930,41 @@ footer a:hover {
 
 .close {
 	position: absolute;
-  margin: 0 auto;
+	top: 10%;
+	left: 49.5%;
   color: #fed173;
   text-shadow: 1px 1px 4px #183C2E;
   font-size: 3rem;
   font-weight: 600;
+  -webkit-transition: color .3s, -webkit-transform 1.2s ease-in-out;
+  transition: color .3s, -webkit-transform 1.2s ease-in-out;
+  transition: color .3s, transform 1.2s ease-in-out;
+  transition: color .3s, transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+  height: 50px;
+}
+
+.close:hover,
+.close:focus {
+	color: #FFC23F;
+	-webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
 .modal input {
 	width: 55%;
-	margin-bottom: 1rem;
+	margin-bottom: 2rem;
 	font-size: 1rem;
 	font-style: italic;
-	font-weight: 200;
-	padding: .5rem 0;
-	border-radius: 3px;
+	font-weight: 300;
+	padding: .5rem 0 .5rem .2rem;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 1px solid black;
+	color: #183C2E;
+	background-color: #fffff7;
 }
 
 .modal label {
@@ -942,7 +974,111 @@ footer a:hover {
 }
 
 .password-reset {
-	font-size: .9rem;
-	color: #416456;
 	margin-bottom: 3rem;
 }
+
+.password-reset a {
+	font-size: .9rem;
+	color: #416456;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+
+.password-reset a:hover {
+	color: #183C2E;
+	font-weight: 700;
+}
+
+/* Modal Animations */
+
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+		visibility: hidden;
+	}
+
+	to {
+		opacity: 1;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+		visibility: visible;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+		visibility: hidden;
+	}
+
+	to {
+		opacity: 1;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+		visibility: visible;
+	}
+}
+		
+	/* Courtesy of Dan Eden - https://daneden.github.io/animate.css/ */
+
+	@-webkit-keyframes bounceInUp {
+	  from {
+	    opacity: 0;
+	    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	    -webkit-transform: translate3d(0, 3000px, 0);
+	    transform: translate3d(0, 3000px, 0);
+	  }
+
+	  60% {
+	    opacity: 1;
+	    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	    -webkit-transform: translate3d(0, -20px, 0);
+	    transform: translate3d(0, -20px, 0);
+	  }
+
+	  75% {
+	    -webkit-transform: translate3d(0, 10px, 0);
+	    transform: translate3d(0, 10px, 0);
+	  }
+
+	  90% {
+	    -webkit-transform: translate3d(0, -5px, 0);
+	    transform: translate3d(0, -5px, 0);
+	  }
+
+	  to {
+	    -webkit-transform: translate3d(0, 0, 0);
+	    transform: translate3d(0, 0, 0);
+	  }
+	}
+
+	@keyframes bounceInUp {
+	  from {
+	    opacity: 0;
+	    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	    -webkit-transform: translate3d(0, 3000px, 0);
+	    transform: translate3d(0, 3000px, 0);
+	  }
+
+	  60% {
+	    opacity: 1;
+	    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	    -webkit-transform: translate3d(0, -20px, 0);
+	    transform: translate3d(0, -20px, 0);
+	  }
+
+	  75% {
+	    -webkit-transform: translate3d(0, 10px, 0);
+	    transform: translate3d(0, 10px, 0);
+	  }
+
+	  90% {
+	    -webkit-transform: translate3d(0, -5px, 0);
+	    transform: translate3d(0, -5px, 0);
+	  }
+
+	  to {
+	    -webkit-transform: translate3d(0, 0, 0);
+	    transform: translate3d(0, 0, 0);
+	  }
+	}
